@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Montserrat:wght@400;700&display=swap");
+:root {
+  --primary-color: #23a6f0;
+}
+* {
+  font-family: "Monserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  max-height: 100%;
+  z-index: 0;
+}
+
+.cover {
+  background: linear-gradient(90deg, #0052d4 0%, #4364f7 50%, #6fb1fc 100%);
+  max-height: 100%;
+  position: relative;
+}
+.navbar {
+  margin: 0px 25rem 0px 25rem;
+  display: flex;
+  justify-content: space-between;
+}
+.navIcon {
+  display: flex;
+  align-items: center;
+  font-family: "Monserrat", sans-serif;
+  color: white;
+  gap: 2rem;
+}
+
+.navIcon h1 {
+  font-weight: 700;
+}
+.navIcon h1:hover {
+  scale: 1.2;
+}
+.navIconMenu a {
+  text-decoration: none;
+  color: white;
+  font-family: "Monserrat", sans-serif;
+  margin: 1rem;
+  font-weight: bold;
+}
+.navLogin {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: "monserrat", sans-serif;
+}
+.login {
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.login a {
+  color: white;
+  text-decoration: none;
+}
+.member {
+  padding: 1rem;
+  border-radius: 5px;
+  background: var(--primary-color, #23a6f0);
+  border: none;
+}
+.member a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* hero */
+.Hero {
+  margin: 0px 25rem 15rem 25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tagLine {
+  color: white;
+  font-family: "Monserrat", sans-serif;
+  font-weight: bold;
+}
+.tagLine h1 {
+  color: var(--light-text-color, #fff);
+  font-family: "Montserrat", sans-serif;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px; /* 137.931% */
+  letter-spacing: 1px;
+}
+.tagLine h5 {
+  color: var(--light-text-color, #fff);
+  /* h5 */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.1px;
+}
+.tagLine h4 {
+  color: var(--light-text-color, #fff);
+  /* h4 */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.2px;
+}
+.tagLine a {
+  border: 2px solid white;
+  padding: 15px 36px;
+  border-radius: 37px;
+  text-decoration: none;
+  color: white;
+}
+.HeroImg {
+  margin: 0 0 0 13rem;
+}
+
+/* card */
+.card {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: auto;
+  height: 13rem;
+  width: 60%;
+  margin: -7rem 25rem 0px 25rem;
+  position: absolute;
+}
+.carditem {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 5rem;
+  /* background-color: #0052d4; */
+}
+.carditem img {
+  margin-top: 2rem;
+}
+.carditem h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
