@@ -39,7 +39,11 @@ body {
   font-weight: 700;
 }
 .navIcon h1:hover {
-  scale: 1.2;
+  transition: linear 0.5s;
+  color: aqua;
+}
+.navIcon h1:hover::after {
+  transition: ease-out 0.5s;
 }
 .navIconMenu a {
   text-decoration: none;
@@ -47,6 +51,11 @@ body {
   font-family: "Monserrat", sans-serif;
   margin: 1rem;
   font-weight: bold;
+}
+.navIconMenu a:hover {
+  margin-top: 2rem;
+  text-decoration: underline 3px;
+  transition: linear 0.5s;
 }
 .navLogin {
   display: flex;
@@ -61,6 +70,12 @@ body {
   font-size: 1rem;
   font-weight: bold;
 }
+.login:hover {
+  background-color: var(--primary-color, #23a6f0);
+  border-radius: 5px;
+  padding: 1rem;
+  transition: all linear 0.5s;
+}
 .login a {
   color: white;
   text-decoration: none;
@@ -70,6 +85,11 @@ body {
   border-radius: 5px;
   background: var(--primary-color, #23a6f0);
   border: none;
+}
+.member:hover {
+  background-color: #4364f7 50%;
+  transition: ease-out 0.5s;
+  scale: 0.9;
 }
 .member a {
   font-weight: bold;
@@ -124,6 +144,12 @@ body {
   border-radius: 37px;
   text-decoration: none;
   color: white;
+}
+.tagLine a:hover {
+  background-color: #80a8e9;
+  transition: all ease 0.5s;
+  scale: 0.9;
+  transform: scaleX(90deg);
 }
 .HeroImg {
   margin: 0 0 0 13rem;
